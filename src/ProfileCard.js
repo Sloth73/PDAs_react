@@ -1,4 +1,4 @@
-function ProfileCard({title, handle, image}) {
+function ProfileCard({title, handle, image, description}) {
   return (
     <div className="card">
       <div className="card-image">
@@ -11,8 +11,11 @@ function ProfileCard({title, handle, image}) {
           <p className="title is-4">{title}</p>
           {/*working with props in child component */}
           <p className="subtitle is-6">{handle}</p>
-          {/*working with props in child component */}
-        </div>
+                  {/*working with props in child component */}
+              </div>
+              <div className="content">{description}
+                  
+              </div>
       </div>
     </div>
   );
