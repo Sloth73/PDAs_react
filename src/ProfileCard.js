@@ -1,9 +1,10 @@
-function ProfileCard(props) {
+function ProfileCard({title, handle, image}) {
   return (
-    <div>
-      <div>Title is {props.title}</div>{" "}
+      <div>
+          <img src={image}/>
+          <div>Title is {title}</div>
       {/*working with props in child component */}
-      <div>Handle is {props.handle}</div>
+      <div>Handle is {handle}</div>
       {/*working with props in child component */}
     </div>
   );
